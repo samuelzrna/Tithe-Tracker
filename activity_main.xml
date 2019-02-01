@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#dcd0c0"
+    tools:context="com.archi.tithetracker.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/d_input"
+        android:gravity="right"
+        android:hint="[Insert Income Here]"
+        android:inputType="numberDecimal"
+        android:textColor="#53a56e"
+        android:textColorHint="#53a56e"
+        />
+    <Button
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_clear"
+        android:background="#53a56e"
+        android:textColor="#FFFFFF"
+        android:text="Clear Input Bar"
+        android:layout_below="@+id/d_input"
+        android:onClick="clearButton"
+        />
+    <Button
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_input_income"
+        android:textColor="#FFFFFF"
+        android:background="#53a56e"
+        android:text="Add Income"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/d_input"
+        android:onClick="inputButton"
+        />
+    <Button
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_delete"
+        android:text="Tithed"
+        android:textColor="#FFFFFF"
+        android:background="#ff533d"
+        android:onClick="titheButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+    <Button
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_toggle_view"
+        android:text="Toggle Tithe:"
+        android:textColor="#FFFFFF"
+        android:background="#53a56e"
+        android:onClick="toggleViewButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/display_listview"
+        android:layout_below="@+id/btn_clear"
+        android:layout_marginTop="1dp"/>
+</RelativeLayout>

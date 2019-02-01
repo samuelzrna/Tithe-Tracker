@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="40dp"
+    android:background="#dcd0c0">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/t_input"
+        android:text="$60.00"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_delete_row"
+        android:layout_alignParentRight="true"
+        android:background="#53a56e"
+        android:text="X"
+        android:gravity="center"
+        android:onClick="deleteRowButton"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/t_date"
+        android:text="10/18/16"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/btn_delete_row"
+        android:layout_marginRight="5dp"/>
+</RelativeLayout>
